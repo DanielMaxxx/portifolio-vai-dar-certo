@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <link rel="stylesheet" href="style2.css">
+    <!-- Não é correto referenciar JavaScript como um arquivo de estilo -->
+    <!-- <link rel="stylesheet" href="script.js"> -->
+</head>
+
+
+<body>
+ 
+  <nav class="NavBar">
+    <a href="Home.html">Home</a>
+   
+    <a href="Natureza.html">Natureza</a>
+
+    <a href="Linguagens.html">Linguagens</a>
+
+    <a href="Matematica.html">Matematica</a>
+
+    <a href="Humanas.html">Humanas</a>
+   
+    <a href="ppe.html">PPE</a>
+
+    <a href="tecnico.html">Tecnico</a>
+   
+
+   
+  </nav>
+ 
+  <div class="Inicio">
+    <div>
+      <h1 id="Apresentação">Eu sou <span class="corRoxa">Daniel</span> Max</h1>
+     
+      <button id="downloadButton">Curriculo</button>
+     
+    <div class="Portifolio">
+     
+      <a href="https://drive.google.com/file/d/13wksQb_8nbKIln1FIqONRpueUXfAhSGK/view?usp=sharing" target="_blank"><button>Portifolio 2023</button></a>
+     
+      <a href="https://docs.google.com/presentation/d/17QW4pJ-LKz1jNAdwoh3dzWnrnRk6hiKl0OlznBuLc1Q/edit?usp=sharinghttps://docs.google.com/presentation/d/17QW4pJ-LKz1jNAdwoh3dzWnrnRk6hiKl0OlznBuLc1Q/edit?usp=sharing" target="_blank"><button id="btt">Portifolio 2022</button></a>
+
+
+    </div>
+   </div>
+     
+    <div class="frame">
+        <img src="IMG_9510.jpg" alt="Sua Foto" class="photo">
+       
+      </div>
+   
+    </div>
+ 
+    <h1 class="sobremim">
+      Meu nome é Daniel Maximiniano Vieira Assunção, tenho 17 anos sou de sp <br>
+      vim para Florianopolis com 1 ano de idade e fui criado aqui entrei no <br>
+      Senai para apenas estudar e acabei conhecendo o mundo da programação <br>
+      e descidi que minha ambição é se tornar um dev full stack, e trabalhar <br>
+      na area de tecnologia, ao fim do ensino medio quero fazer faculdade de <br>
+      Ads e assim continuar trilhando meu plano de carreira <br>
+    </h1>
+   
+   
+    <!-- Corrija aqui -->
+    <script>
+        document.getElementById('downloadButton').addEventListener('click', function() {
+          // Caminho relativo para o arquivo de imagem
+          var imagePath = 'curriculo.png';
+  
+  
+          // Cria um link temporário
+          var link = document.createElement("a");
+          link.download = "Curriculo"; // Nome do arquivo
+          link.href = imagePath;
+  
+  
+          // Adiciona o link ao documento e simula o clique para iniciar o download
+          document.body.appendChild(link);
+          link.click();
+  
+  
+          // Limpa o link após o download
+          setTimeout(function() {
+              document.body.removeChild(link);
+          }, 0);
+        });
+      </script>
+    
+ 
+</body>
+
+
+</html>
